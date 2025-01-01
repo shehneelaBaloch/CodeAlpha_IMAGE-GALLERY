@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">📸 Photo Gallery</div>
+    </nav>
+
+    <!-- Category Buttons -->
+    <div class="category-filters">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="flowers">Flowers</button>
+        <button class="filter-btn" data-category="girls">Girls</button>
+        <button class="filter-btn" data-category="nature">Nature</button>
+    </div>
+
+    <!-- Main Gallery Section -->
+    <div class="gallery-grid">
+        <!-- Images will be dynamically loaded here -->
+    </div>
+
+    <!-- Modal for Image Viewer -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">✖</button>
+            <div id="modal-gallery">
+                <button id="modal-prev" class="nav-btn">◀</button>
+                <div id="modal-image-wrapper">
+                    <img id="modal-gallery-image" src="" alt="Gallery Image">
+                </div>
+                <button id="modal-next" class="nav-btn">▶</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
